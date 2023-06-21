@@ -1,10 +1,11 @@
 class Chronometer {
   constructor() {
-    // ... your code goes here
+  
   }
 
   start(printTimeCallback) {
-    // ... your code goes here
+    timeoutID = setTimeout(printTimeCallback, 1000);
+    this.currentTime +=1;
   }
 
   getMinutes() {
